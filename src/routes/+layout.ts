@@ -3,7 +3,7 @@ import '$lib/i18n';
 import {locale, waitLocale} from 'svelte-i18n';
 import type {LayoutLoad} from './$types';
 
-export const ssr = false;
+export const ssr = true;
 
 
 export const load: LayoutLoad = async () => {
