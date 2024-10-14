@@ -125,9 +125,12 @@
                              src="https://tailwindui.com/plus/img/component-images/bento-01-performance.png" alt="">
                         <div class="p-10 pt-4">
                             <h3 class="text-sm/4 font-semibold text-indigo-600">Simplicity</h3>
-                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Notify your client on their phone</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Forget about having to buy and maintain devices for notifying your client.
-                            They already have a device in their pocket that can receive notifications, so let's use that instead!</p>
+                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Notify your client on
+                                their phone</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Forget about having to buy and maintain
+                                devices for notifying your client.
+                                They already have a device in their pocket that can receive notifications, so let's use
+                                that instead!</p>
                         </div>
                     </div>
                     <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]"></div>
@@ -139,9 +142,12 @@
                              src="https://tailwindui.com/plus/img/component-images/bento-01-releases.png" alt="">
                         <div class="p-10 pt-4">
                             <h3 class="text-sm/4 font-semibold text-indigo-600">Privacy</h3>
-                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">No personal information</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Your client doesn't have to share personal information such as a
-                                telephone number nor email. They only need to access a site on their browser and they're good to go!</p>
+                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">No personal
+                                information</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Your client doesn't have to share personal
+                                information such as a
+                                telephone number nor email. They only need to access a site on their browser and they're
+                                good to go!</p>
                         </div>
                     </div>
                     <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]"></div>
@@ -153,9 +159,11 @@
                              src="https://tailwindui.com/plus/img/component-images/bento-01-speed.png" alt="">
                         <div class="p-10 pt-4">
                             <h3 class="text-sm/4 font-semibold text-indigo-600">Informational</h3>
-                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Enhance the waiting experience</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Let your end-user know the average wait time, their current position in the queue,
-                            and send custom messages to their device once the product or service is ready</p>
+                            <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Enhance the waiting
+                                experience</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Let your end-user know the average wait
+                                time, their current position in the queue,
+                                and send custom messages to their device once the product or service is ready</p>
                         </div>
                     </div>
                     <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-bl-[2rem]"></div>
@@ -168,7 +176,8 @@
                         <div class="p-10 pt-4">
                             <h3 class="text-sm/4 font-semibold text-indigo-600">Customization</h3>
                             <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Make it your own</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Invite people to your organization, add your company logo to display,
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Invite people to your organization, add
+                                your company logo to display,
                                 define what information is shared to the end user, and more!</p>
                         </div>
                     </div>
@@ -182,7 +191,8 @@
                         <div class="p-10 pt-4">
                             <h3 class="text-sm/4 font-semibold text-indigo-600">Advanced</h3>
                             <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Smart tracking</p>
-                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Follow the transition of each entry from the moment it is being prepared,
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Follow the transition of each entry from
+                                the moment it is being prepared,
                                 once it's ready, and when it has finally concluded.</p>
                         </div>
                     </div>
@@ -203,17 +213,62 @@
                 <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Distinctio et nulla eum
                     soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id
                     ut laborum.</p>
-                <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-r-none xl:p-10">
                         <div>
                             <div class="flex items-center justify-between gap-x-4">
-                                <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">
-                                    Freelancer</h3>
+                                <h3 id="tier-hobby" class="text-lg font-semibold leading-8 text-gray-900">
+                                    Hobby</h3>
                             </div>
-                            <p class="mt-4 text-sm leading-6 text-gray-600">The essentials to provide your best work for
-                                clients.</p>
+                            <p class="mt-4 text-sm leading-6 text-gray-600">Try out the basic functionalities of the
+                                application.</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
-                                <span class="text-4xl font-bold tracking-tight text-gray-900">$24</span>
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">Free</span>
+                            </p>
+                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    1 Wait List
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    500 entries/month
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    1 person in the organization
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" aria-describedby="tier-freelancer"
+                           class="mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy
+                            plan</a>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-3xl lg:rounded-none bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-b-none xl:p-10">
+                        <div>
+                            <div class="flex items-center justify-between gap-x-4">
+                                <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">
+                                    Essential</h3>
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-gray-600">Expand the functionalities of the
+                                application.</p>
+                            <p class="mt-6 flex items-baseline gap-x-1">
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">$19</span>
                                 <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
                             </p>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
@@ -224,7 +279,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    5 products
+                                    5 Wait Lists
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -233,7 +288,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Up to 1,000 subscribers
+                                    2,000 entries/month
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -242,7 +297,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Basic analytics
+                                    5 people in the organization
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -251,11 +306,11 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    48-hour support response time
+                                    Custom Messages
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" aria-describedby="tier-freelancer"
+                        <a href="#" aria-describedby="tier-essential"
                            class="mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy
                             plan</a>
                     </div>
@@ -270,7 +325,7 @@
                             <p class="mt-4 text-sm leading-6 text-gray-600">A plan that scales with your rapidly growing
                                 business.</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
-                                <span class="text-4xl font-bold tracking-tight text-gray-900">$32</span>
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">$49</span>
                                 <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
                             </p>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
@@ -281,7 +336,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    25 products
+                                    15 Wait Lists
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -290,7 +345,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Up to 10,000 subscribers
+                                    5,000 entries/month
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -299,7 +354,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Advanced analytics
+                                    15 people in the organization
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -308,7 +363,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    24-hour support response time
+                                    Custom Messages
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -317,7 +372,16 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Marketing automations
+                                    Position Tracking
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    Wait Time Tracking
                                 </li>
                             </ul>
                         </div>
@@ -331,10 +395,9 @@
                                 <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900">
                                     Enterprise</h3>
                             </div>
-                            <p class="mt-4 text-sm leading-6 text-gray-600">Dedicated support and infrastructure for
-                                your company.</p>
+                            <p class="mt-4 text-sm leading-6 text-gray-600">Unleash the full potential.</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
-                                <span class="text-4xl font-bold tracking-tight text-gray-900">$48</span>
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">$99</span>
                                 <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
                             </p>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
@@ -345,7 +408,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Unlimited products
+                                    30 Wait Lists
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -354,7 +417,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Unlimited subscribers
+                                    10,000 entries/month
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -363,7 +426,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Advanced analytics
+                                    30 people in the organization
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -372,7 +435,7 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    1-hour, dedicated support response time
+                                    Custom Messages
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
@@ -381,7 +444,34 @@
                                               d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Marketing automations
+                                    Position Tracking
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    Wait Time Tracking
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    Branding
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                              d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                    Priority support + feature request
                                 </li>
                             </ul>
                         </div>
