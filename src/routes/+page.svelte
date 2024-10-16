@@ -1,3 +1,20 @@
+<script>
+    const faqs = [
+        {
+            question: 'What does my client need?',
+            answer: 'Just a phone with an active internet connection.'
+        },
+        {
+            question: 'How does my client get notified?',
+            answer: 'It depends on the device, the capabilities of the browser, and the permissions provided. The information of the current state of the entry is always shown up to date, without the need to refresh the browser. As for calling the attention, the system will attempt to display a notification, to vibrate, and to play a sound.'
+        },
+        {
+            question: 'What do the features on the pricing section mean?',
+            answer: '"Custom Messages" means that you can send a message to the device of the end-user once the product or service is ready or cancelled. "Position Tracking" means that the end-user can know their current position in the list. "Wait Time Tracking" means that the end-user can know the average wait time of the list. "Branding" means that you can add your company logo to display (visible on the entry for the end-user, on the notifications, and on the QR code).'
+        }
+    ]
+</script>
+
 <div class="bg-white">
     <!-- Header -->
     <header class="absolute inset-x-0 top-0 z-50">
@@ -21,13 +38,13 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Documentation</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Status</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+                <a href="https://dev.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
                         aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
@@ -85,7 +102,7 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl text-center">
                         <h1 class="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Manage a
-                            wait queue with confidence</h1>
+                            wait list with confidence</h1>
                         <p class="mt-6 text-lg leading-8 text-gray-600">Let your clients know immediately when their
                             product or service is available. No extra device required</p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -116,7 +133,7 @@
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
             <h2 class="text-base/7 font-semibold text-indigo-600">Work smarter, not harder</h2>
             <p class="mt-2 max-w-lg text-pretty text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-                Everything you need to manage your wait queue.</p>
+                Everything you need to manage your wait list.</p>
             <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
                 <div class="relative lg:col-span-3">
                     <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]"></div>
@@ -162,7 +179,7 @@
                             <p class="mt-2 text-lg/7 font-medium tracking-tight text-gray-950">Enhance the waiting
                                 experience</p>
                             <p class="mt-2 max-w-lg text-sm/6 text-gray-600">Let your end-user know the average wait
-                                time, their current position in the queue,
+                                time, their current position in the list,
                                 and send custom messages to their device once the product or service is ready</p>
                         </div>
                     </div>
@@ -487,48 +504,17 @@
         <div class="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
             <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
             <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-                <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                    <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">What&#039;s the best thing
-                        about Switzerland?
-                    </dt>
-                    <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                        <p class="text-base leading-7 text-gray-600">I don&#039;t know, but the flag is a big plus.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam
-                            fugiat.</p>
-                    </dd>
-                </div>
-
-                <!-- More questions... -->
+                {#each faqs as faq}
+                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">{faq.question}
+                        </dt>
+                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                            <p class="text-base leading-7 text-gray-600">{faq.answer}</p>
+                        </dd>
+                    </div>
+                {/each}
             </dl>
         </div>
-
-        <!-- CTA section -->
-        <div class="relative -z-10 mt-32 px-6 lg:px-8">
-            <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 transform-gpu justify-center overflow-hidden blur-3xl sm:bottom-0 sm:right-[calc(50%-6rem)] sm:top-auto sm:translate-y-0 sm:transform-gpu sm:justify-end"
-                 aria-hidden="true">
-                <div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-25"
-                     style="clip-path: polygon(73.6% 48.6%, 91.7% 88.5%, 100% 53.9%, 97.4% 18.1%, 92.5% 15.4%, 75.7% 36.3%, 55.3% 52.8%, 46.5% 50.9%, 45% 37.4%, 50.3% 13.1%, 21.3% 36.2%, 0.1% 0.1%, 5.4% 49.1%, 21.4% 36.4%, 58.9% 100%, 73.6% 48.6%)"></div>
-            </div>
-            <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your productivity.<br>Start
-                    using our app today.</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">Incididunt sint fugiat pariatur
-                    cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
-                       class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                        started</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                            aria-hidden="true">→</span></a>
-                </div>
-            </div>
-            <div class="absolute left-1/2 right-0 top-full -z-10 hidden -translate-y-1/2 transform-gpu overflow-hidden blur-3xl sm:block"
-                 aria-hidden="true">
-                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-            </div>
-        </div>
-    </main>
 
     <!-- Footer -->
     <div class="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
