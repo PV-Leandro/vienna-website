@@ -8,15 +8,18 @@
     const faqs = [
         {
             question: 'What does my client need?',
-            answer: 'Just a phone with an active internet connection.'
+            answer: 'Just a phone with an active internet connection.',
+            expanded: false
         },
         {
             question: 'How does my client get notified?',
-            answer: 'It depends on the device, the capabilities of the browser, and the permissions provided. The information of the current state of the entry is always shown up to date, without the need to refresh the browser. As for calling the attention, the system will attempt to display a notification, to vibrate, and to play a sound.'
+            answer: 'It depends on the device, the capabilities of the browser, and the permissions provided. The information of the current state of the entry is always shown up to date, without the need to refresh the browser. As for calling the attention, the system will attempt to display a notification, to vibrate, and to play a sound.',
+            expanded: false
         },
         {
             question: 'What do the features on the pricing section mean?',
-            answer: '"Custom Messages" means that you can send a message to the device of the end-user once the product or service is ready or cancelled. "Position Tracking" means that the end-user can know their current position in the list. "Wait Time Tracking" means that the end-user can know the average wait time of the list. "Branding" means that you can add your company logo to display (visible on the entry for the end-user, on the notifications, and on the QR code).'
+            answer: '"Custom Messages" means that you can send a message to the device of the end-user once the product or service is ready or cancelled. "Position Tracking" means that the end-user can know their current position in the list. "Wait Time Tracking" means that the end-user can know the average wait time of the list. "Branding" means that you can add your company logo to display (visible on the entry for the end-user, on the notifications, and on the QR code).',
+            expanded: false
         }
     ]
 </script>
@@ -44,9 +47,12 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#features" on:click={() => scrollTo('features-header')} class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-                <a href="#pricing" on:click={() => scrollTo('pricing-header')} class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
-                <a href="https://docs.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Documentation</a>
+                <a href="#features" on:click={() => scrollTo('features-header')}
+                   class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                <a href="#pricing" on:click={() => scrollTo('pricing-header')}
+                   class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+                <a href="https://docs.wait-up.net"
+                   class="text-sm font-semibold leading-6 text-gray-900">Documentation</a>
                 <a href="https://status.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Status</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -116,7 +122,8 @@
                                on:click={() => scrollTo('pricing-header')}
                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
                                 started</a>
-                            <a href="#features" on:click={() => scrollTo('features-header')} class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
+                            <a href="#features" on:click={() => scrollTo('features-header')}
+                               class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
                                     aria-hidden="true">→</span></a>
                         </div>
                     </div>
@@ -507,14 +514,47 @@
         <!-- FAQs -->
         <div class="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
             <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-            <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+            <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
                 {#each faqs as faq}
-                    <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                        <dt class="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">{faq.question}
+                    <div class="pt-6">
+                        <dt>
+                            <!-- Expand/collapse question button -->
+                            <button on:click={() => faq.expanded = !faq.expanded}
+                                    type="button"
+                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                    aria-controls="faq-0" aria-expanded="false">
+                                <span class="text-base font-semibold leading-7">{faq.question}</span>
+                                <span class="ml-6 flex h-7 items-center">
+                            <!--
+                              Icon when question is collapsed.
+
+                              Item expanded: "hidden", Item collapsed: ""
+                            -->
+                            <svg class:hidden={faq.expanded} class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke-width="1.5"
+                                 stroke="currentColor"
+                                 aria-hidden="true" data-slot="icon">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/>
+                            </svg>
+                                    <!--
+                                      Icon when question is expanded.
+
+                                      Item expanded: "", Item collapsed: "hidden"
+                                    -->
+                            <svg class:hidden={!faq.expanded} class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke-width="1.5"
+                                 stroke="currentColor"
+                                 aria-hidden="true" data-slot="icon">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/>
+                            </svg>
+                          </span>
+                            </button>
                         </dt>
-                        <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                            <p class="text-base leading-7 text-gray-600">{faq.answer}</p>
-                        </dd>
+                        {#if faq.expanded}
+                            <dd class="mt-2 pr-12" id="faq-0">
+                                <p class="text-base leading-7 text-gray-600">{faq.answer}</p>
+                            </dd>
+                        {/if}
                     </div>
                 {/each}
             </dl>
@@ -525,16 +565,20 @@
             <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
                 <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                     <div class="pb-6">
-                        <a href="/terms-conditions" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms & Conditions</a>
+                        <a href="/terms-conditions" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms &
+                            Conditions</a>
                     </div>
                     <div class="pb-6">
-                        <a href="/privacy-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy Policy</a>
+                        <a href="/privacy-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy
+                            Policy</a>
                     </div>
                     <div class="pb-6">
-                        <a href="/refund-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Refund Policy</a>
+                        <a href="/refund-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Refund
+                            Policy</a>
                     </div>
                     <div class="pb-6">
-                        <a href="https://status.wait-up.net" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Status</a>
+                        <a href="https://status.wait-up.net"
+                           class="text-sm leading-6 text-gray-600 hover:text-gray-900">Status</a>
                     </div>
                 </nav>
                 <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2024 Your Company, Inc. All rights
