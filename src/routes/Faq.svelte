@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
+    import {fly} from 'svelte/transition';
 
     const faqs = [
         {
@@ -14,7 +14,24 @@
         },
         {
             question: 'What do the features on the pricing section mean?',
-            answer: '"Custom Messages" means that you can send a message to the device of the end-user once the product or service is ready or cancelled. "Position Tracking" means that the end-user can know their current position in the list. "Wait Time Tracking" means that the end-user can know the average wait time of the list. "Branding" means that you can add your company logo to display (visible on the entry for the end-user, on the notifications, and on the QR code).',
+            list: [
+                {
+                    title: 'Custom Messages: ',
+                    description: 'Send a message to the device of the end-user once the product or service is ready or cancelled.'
+                },
+                {
+                    title: 'Position Tracking: ',
+                    description: 'The end-user can know their current position in the list.'
+                },
+                {
+                    title: 'Wait Time Tracking: ',
+                    description: 'The end-user can know the average wait time of the list.'
+                },
+                {
+                    title: 'Branding: ',
+                    description: 'Add your company logo, visible on the entry for the end-user, on the notifications, and on the QR code.'
+                }
+            ],
             expanded: false
         }
     ]
@@ -48,12 +65,19 @@
                     </button>
                 </dt>
                 {#if faq.expanded}
-                    <dd in:fly class="mt-2 pr-12" id="faq-0">
-                        <p class="text-base leading-7 text-gray-600">{faq.answer}</p>
-                        <ul class="list-disc list-inside text-gray-600">
-                            <li>jeje</li>
-                            <li>jojo</li>
-                        </ul>
+                    <dd in:fly class="mt-2 pr-12 text-base leading-7 text-gray-600" id="faq-0">
+                        {#if faq.answer}
+                            <p>{faq.answer}</p>
+                        {:else if faq.list}
+                            <ul class="list-disc list-inside">
+                                {#each faq.list as item}
+                                    <li>
+                                        <span class="font-medium">{item.title}</span>
+                                        <span>{item.description}</span>
+                                    </li>
+                                {/each}
+                            </ul>
+                        {/if}
                     </dd>
                 {/if}
             </div>
