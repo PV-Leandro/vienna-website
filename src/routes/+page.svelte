@@ -1,4 +1,10 @@
 <script>
+    function scrollTo(id) {
+        console.log('scrolling to', id);
+        const element = document.getElementById(id);
+        element.scrollIntoView({behavior: 'smooth'});
+    }
+
     const faqs = [
         {
             question: 'What does my client need?',
@@ -20,7 +26,7 @@
     <header class="absolute inset-x-0 top-0 z-50">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Your Company</span>
                     <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
                          alt="">
@@ -38,10 +44,10 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Documentation</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Status</a>
+                <a href="#features" on:click={() => scrollTo('features-header')} class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                <a href="#pricing" on:click={() => scrollTo('pricing-header')} class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+                <a href="https://docs.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Documentation</a>
+                <a href="https://status.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Status</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="https://dev.wait-up.net" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
@@ -106,10 +112,11 @@
                         <p class="mt-6 text-lg leading-8 text-gray-600">Let your clients know immediately when their
                             product or service is available. No extra device required</p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
-                            <a href="#"
+                            <a href="#pricing"
+                               on:click={() => scrollTo('pricing-header')}
                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
                                 started</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
+                            <a href="#features" on:click={() => scrollTo('features-header')} class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
                                     aria-hidden="true">→</span></a>
                         </div>
                     </div>
@@ -131,7 +138,7 @@
 
         <!-- Feature section -->
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-            <h2 class="text-base/7 font-semibold text-indigo-600">Work smarter, not harder</h2>
+            <h2 id="features-header" class="text-base/7 font-semibold text-indigo-600">Work smarter, not harder</h2>
             <p class="mt-2 max-w-lg text-pretty text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl">
                 Everything you need to manage your wait list.</p>
             <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -222,14 +229,11 @@
         <!-- Pricing section -->
         <div class="py-24 sm:pt-48">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-4xl text-center">
+                <div id="pricing-header" class="mx-auto max-w-4xl text-center">
                     <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
                     <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Pricing plans for teams
                         of&nbsp;all&nbsp;sizes</p>
                 </div>
-                <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Distinctio et nulla eum
-                    soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id
-                    ut laborum.</p>
                 <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-r-none xl:p-10">
                         <div>
@@ -521,21 +525,21 @@
             <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
                 <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                     <div class="pb-6">
-                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms & Conditions</a>
+                        <a href="/terms-conditions" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms & Conditions</a>
                     </div>
                     <div class="pb-6">
-                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy Policy</a>
+                        <a href="/privacy-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy Policy</a>
                     </div>
                     <div class="pb-6">
-                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Refund Policy</a>
+                        <a href="/refund-policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Refund Policy</a>
                     </div>
                     <div class="pb-6">
-                        <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Status</a>
+                        <a href="https://status.wait-up.net" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Status</a>
                     </div>
                 </nav>
                 <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2024 Your Company, Inc. All rights
                     reserved.</p>
             </div>
         </footer>
-
+    </main>
 </div>
