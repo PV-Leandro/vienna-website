@@ -1,5 +1,13 @@
 <script lang="ts">
     import {scrollTo} from "$lib/util/scroll";
+    import {createEventDispatcher} from "svelte";
+
+    const dispatch = createEventDispatcher();
+
+    function dispatchToggleMenuEvent() {
+        dispatch('toggle-menu');
+    }
+
 </script>
 
 <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -12,6 +20,7 @@
     </div>
     <div class="flex lg:hidden">
         <button type="button"
+                on:click={dispatchToggleMenuEvent}
                 class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

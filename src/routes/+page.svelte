@@ -6,12 +6,17 @@
     import Hero from "./Hero.svelte";
     import Navigation from "./Navigation.svelte";
     import MobileMenu from "./MobileMenu.svelte";
+    import Transition from "svelte-transition";
+
+    let showMobileMenu = false;
 </script>
 
 <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
-        <Navigation/>
-        <MobileMenu/>
+        <Navigation on:toggle-menu={() => showMobileMenu = !showMobileMenu}/>
+        <Transition show={showMobileMenu}>
+            <MobileMenu on:close={() => showMobileMenu = false}/>
+        </Transition>
     </header>
     <main class="isolate">
         <Hero/>
