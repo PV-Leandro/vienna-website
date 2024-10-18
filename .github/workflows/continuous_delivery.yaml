@@ -38,10 +38,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Update properties for ${{ inputs.target }}
-        run: |
-          cp cloud/${{ inputs.target }}/properties.js src/config/properties.js
-
       - name: Build
         run: npm run build
 
