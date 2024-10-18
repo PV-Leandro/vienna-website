@@ -14,12 +14,10 @@
 		"build-cf-types": "wrangler types && mv worker-configuration.d.ts src/"
 	},
 	"devDependencies": {
-		"@svelte-put/qr": "^1.2.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"@sveltejs/kit": "^2.5.6",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
-		"@tanstack/svelte-query-devtools": "^5.29.0",
 		"@types/eslint": "^8.56.0",
 		"@typescript-eslint/eslint-plugin": "^7.7.0",
 		"@typescript-eslint/parser": "^7.7.0",
@@ -33,7 +31,6 @@
 		"svelte": "^4.2.15",
 		"svelte-check": "^3.6.9",
 		"svelte-hero-icons": "^5.1.0",
-		"sveltekit-search-params": "^2.1.2",
 		"tailwindcss": "^3.4.3",
 		"tslib": "^2.6.2",
 		"typescript": "^5.4.5",
@@ -41,17 +38,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@formkit/auto-animate": "^0.8.2",
-		"@supabase/supabase-js": "^2.42.4",
 		"@tailwindcss/forms": "^0.5.7",
-		"@tanstack/svelte-query": "^5.29.0",
-		"axios": "^1.6.8",
-		"date-fns": "^3.6.0",
-		"firebase": "^10.13.2",
-		"svelte-boring-avatars": "^1.2.6",
 		"svelte-headlessui": "^0.0.33",
 		"svelte-i18n": "^4.0.0",
-		"svelte-infinite-scroll": "^2.0.1",
 		"svelte-transition": "^0.0.10"
 	}
 }
