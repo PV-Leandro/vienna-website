@@ -4,13 +4,7 @@
     import Pricing from "./Pricing.svelte";
     import Footer from "./Footer.svelte";
     import Hero from "./Hero.svelte";
-
-    function scrollTo(id) {
-        console.log('scrolling to', id);
-        const element = document.getElementById(id);
-        element.scrollIntoView({behavior: 'smooth'});
-    }
-
+    import {scrollTo} from "$lib/util/scroll";
 </script>
 
 <div class="bg-white">
