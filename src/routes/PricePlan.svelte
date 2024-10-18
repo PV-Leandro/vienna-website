@@ -4,9 +4,11 @@
 
 <div>
     <div class="flex items-center justify-between gap-x-4">
-        <h3 id="tier-hobby" class="text-lg font-semibold leading-8 {pricePlan.highlight ? 'text-indigo-600' : 'text-gray-900'}">{pricePlan.name}</h3>
+        <h3 id="tier-{pricePlan.name.toLowerCase()}"
+            class="text-lg font-semibold leading-8 {pricePlan.highlight ? 'text-indigo-600' : 'text-gray-900'}">{pricePlan.name}</h3>
         {#if pricePlan.highlight}
-            <p class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">Most popular</p>
+            <p class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">Most
+                popular</p>
         {/if}
     </div>
     <p class="mt-4 text-sm leading-6 text-gray-600">{pricePlan.description}</p>
@@ -27,6 +29,7 @@
         {/each}
     </ul>
 </div>
-<a href="#" aria-describedby="tier-freelancer"
-   class="mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy
+<a href="#" aria-describedby="tier-{pricePlan.name.toLowerCase()}"
+   class="mt-8 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+{pricePlan.highlight ? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500' : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300' }">Buy
     plan</a>
