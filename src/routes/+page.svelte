@@ -14,7 +14,6 @@
 
     onMount(() => {
         const fragment = window.location.hash.substring(1);
-        console.log('fragment', fragment);
         if (fragment === 'pricing') {
             scrollTo('pricing-header');
         } else if (fragment === 'features') {
